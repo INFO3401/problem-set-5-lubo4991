@@ -8,36 +8,53 @@ Monday:
 1.) Starbucks wants to evaluate whether their mobile pay solutions are having a positive impact on customer service. Outline how they might collect data to answer this question using:
 
 A. An Observational Study
-"first person"
-+ natural settings (in situ), direct info, develop intuitions
-- Personal biases, some things can't be observed, can't be recaptured, recreated or replaced
-Ex: sensor readings, sensory (human) observations, survey results
 
-
-If I were to use an observational study to help starbucks evaluate whether their mobile pay solutions was having a positive impact on customer service I would be most interested in observing how many people were using the mobile pay vs. cash. I might also consider looking at how long people wait in line when using mobile pay and the type of products they are purchasing. Although this is something that can be done through in person observation, I believe that a quick customer survey would be more ideal. The way I might come to a conclusion about customer satifsaction is by observing whether the amount of people using mobile pay exceeds people using regular paying methods. 
+If I were to use an observational study to help starbucks evaluate whether their mobile pay solutions was having a positive impact on customer service, I would be most interested in observing how many people were using the mobile pay vs. traditional methods of payment. I might also consider looking at how long people wait in line when using mobile pay and the type of products they are purchasing. Although this is something that can be done through in person observation, I believe that a quick customer survey would be more ideal. The way I might come to a conclusion about customer satifsaction is by observing whether the amount of people using mobile pay exceeds people using regular paying methods. 
 
 
 B. Focus Groups
 
 With this data collecting method I would be able to focus on a small group of participants and focus only on what I need to know. This method is useful for when short on time and need this information quickly. I would ask particpants what they prefered between mobile pay and traditional forms of payment. I might also ask what their general thoughts were about the service and whether they believed it provide a more positive experience for them when going to Starbucks. Obviously this type of method could result in biases, however, it would be useful for achieving a general sense of what customers were thinking. 
 
-+lots of data in a short time, targetd data, cheap
--Measure percieved behavior, questions can easilty bias(people tend to agree with concesnsus of group)
 
 C. An Online Survey
 
-I believe that this method of data collecting would be most efficient in 
+I believe that this method of data collecting would be most efficient in determining customer satisfaction becuase we would be able to study a much larger population. We wouldn't have to worry about as many biases as what you might find in observations or study groups. In order to incentivize people to take the survey I would simply offer a free coffee with next purchase. In terms of what questions I would ask I would simply look for which type of payment people most prefer whether that be the mobile payment or regular methods of payment. I might even ask customers when they were most likely to use mobile cash depending on what products they were buying, the time of day they were going, etc.  
 
-Be sure to identify what the procedure would look like, what data you would obtain, and what questions you could answer using this data. 
 
-2.) In 2014, Facebook conducted their infamous Emotional Contagion study where they manipulated users' newsfeeds to contain differing amounts of positive and negative content. Name the (a) research question, (b) independent variables, and (c) dependent variables that Facebook used in this study. 
+2.) In 2014, Facebook conducted their infamous Emotional Contagion study where they manipulated users' newsfeeds to contain differing amounts of positive and negative content. Name the (a) research question, (b) independent variables, and (c) dependent variables that Facebook used in this study.
+
+The research question that Facebook was trying to answer was whether emotional contagion occured between individuals on Facebook. In other words, does Facebook have the ability to make you feel good or bad?  
+
+The independant variable would have been the automated system that manipulated the type of content displayed on Facebook users' feeds. 
+
+The dependent variable would be the type of posts users were making and whether they had a negative or postive sentiment.
+
+
 
 3.) What kind of data collection strategies would you use to:
 
 A. Determine user perceptions of a social media campaign
 
+Similar to what Facebook used for their study, I would use an "observational" study to determine if a campaign was negatively or positively percieved. The best way to go about this might be to look at the comment section of a post that depicts a campaign and see how this was being percieved by the public. Obviously, you wont be able to test this simply by scrolling through comments so you would need to collect ever comment and push it through a sentiment analysis program. You could also run a survey which could be equally as effective at determining public perception, however, the number of data points you collect will far less significant. 
+
 B. Assess the effectiveness of a web redesign
+
+If I were to determine the effectiveness of a web redesign I would most be interested in web traffic, Bounce rate, average time on page, CTA click-through rate, and conversion rate for before the redesign was completed and after. You could put out a survey or do some sort of observational study, however, log data will be you best bet
 
 C. Decide whether the next iPhone will live up to its hype (and turn a profit)
 
-Be certain to provide a sufficient justification for why you feel this method is correct. 
+I'm still a bit confused about this assignment and whether we are only restricted to these three data collection methods. If we aren't restricted I would certainly look at what people were posting about it online. What type of comments were people replying to Apple's advertisements? Are there more postive or negative associated posts depicted people's perceptions about the upcoming iphone? You would need to conduct some form of sentiment analysis or key word search to see if people were more likely to buy the new iphone or not compared to previous years. 
+
+If we are restricted to these three methods I would definitely use an online survey study. Although you'll have limitations, due to a sparse number of data points, you might be able to get an intial sense of people's perceptions. 
+
+
+4. For the three scenarios above, describe how you would conduct each investigation (i.e., not only the type of method, but what question would you answer, what procedure would you use, what kind of data would you collect, and how would you analyze that data to answer your question). 
+
+A. 
+
+5. Describe how you might use data fusion to determine how the location people are in influences the ways they communicate with others. Assume you have full access to data from all technologies that a person may be carrying with them or that may be embedded in the environment. 
+
+Friday
+
+6. Link for part one is in different file "Parsers.py"
