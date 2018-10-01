@@ -31,7 +31,6 @@ The independant variable would have been the automated system that manipulated t
 The dependent variable would be the type of posts users were making and whether they had a negative or postive sentiment.
 
 
-
 3.) What kind of data collection strategies would you use to:
 
 A. Determine user perceptions of a social media campaign
@@ -51,10 +50,16 @@ If we are restricted to these three methods I would definitely use an online sur
 
 4. For the three scenarios above, describe how you would conduct each investigation (i.e., not only the type of method, but what question would you answer, what procedure would you use, what kind of data would you collect, and how would you analyze that data to answer your question). 
 
-A. 
+A. To determine whether people were perceiving a social media campaign positively or negatively I would chose an online study, if we were limited to these three methods. The questions I would ask participants would include whether they agreed or disagreed with a campaigns message. Do you find this campaign offensive? why or why not? I would also be interested in observing how many likes a campaign recieves along with the type of comments people were leaving. The procedure would include putting out a poll for anyone willing to particpate in and give their thoughts. I would analyze the data by looking at the ratio of people who did or did not find a campaign to be negative. 
+
+B. Determining whether a new webdesign through these three methods can be kind of tricky. Sure you could put out a survey asking whether people has a positive experience with the new design but you would have no idea why. This is why I think it would be important to look at log data and determine the effectiveness of the design through this. The procedure I would use includes tracking a websites activity before and after the new design is implemented. The data I would collect is the same as what I mentioned in the previous problem. I would simply use traditional methods of data analysis to determine wether the new design was successful. You could also compare your numbers to other website designs to help come to a conclusion as to what needs to be fixed. 
+
+C. Determining how many people are going to buy the new iphones, compared to previous years, is certainly a bit trickier. You could certainly put out a few servays to get an intial sense of what people were thinking. You could also look at the prevelance of negative vs postive posts relating to the new iphone. Personally, I know that people are less likely to buy the new iphone this year simply becuase I have yet to see and youtube or social media post that isn't bashing the new phones release. Negativity definitely outways anything positive. The data I would collect from a survey would most likely be tailored towards whether they would or would not buy the next iphone and why. Too expensive? No need? Not enough new features? etc. Analyze this data with traditional analytical methods.  
 
 5. Describe how you might use data fusion to determine how the location people are in influences the ways they communicate with others. Assume you have full access to data from all technologies that a person may be carrying with them or that may be embedded in the environment. 
 
+I believe that data fusion would be helpful in this situation because it's important to look at multiple sources of data to build sophisticated models and reach a deeper understanding of what they underlining question should be. If I were to personally go about determining this with data fusion I would initially be interested in looking at the idea of self-concept. This is essentially how we self-identify as a person and the ideas one holds true to him or herself. If I were to hypothetically have access every person's posts on Facebook, I'd want to look at the type of words people were using, vocabularly, tone, the type of messages being posted, and location of where that message was being posted from. We could then determine if there is any correlation between a location and the type of words/topics mentioned more or less frequently from said location. Now that we have this data, we could then look at the communicative differences between location A and B. Which words were being used more and in what type of instances? The best example that comes to mind would be to look at controversial topics and campaigns. How are people communicating about politics in two seperable areas? This problem confuses me becuase I don't quite understand if we're interested in the type of words people use, the topics discussed, how people react to eachother, or how people are physically capable of communicating with others. If it's just a matter of words people use I would use the methods I mentioned above. I might also explore observational and focus groups as this could have some interesting insight as to how people communicate. By putting two people in a room who are from entirely different parts of the country, you could observe them having a conversation and see what their communicative differences are. After this combine all data from these methods and come to a consensus. Maybe we could come up with a more specific question and continue research. 
+
 Friday
 
-6. Link for part one is in different file "Parsers.py"
+6. Link for part one is in other file "Parsers.py"
