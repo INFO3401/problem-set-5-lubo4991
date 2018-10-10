@@ -9,43 +9,45 @@ import string
 import os
 
 def countWordsUnstructured(filename):
-    wordCounts={}
+    wordcounts={}
     file = open(filename)
-#file = open(filename).read().split()
-
     for word in file.read().split():
         for mark in string.punctuation:
             word = word.replace(mark, "")
-        if word in wordCounts:
-            wordCounts[word] = wordCounts[word]+1
+        if word in wordcounts:
+            wordcounts[word] = wordcounts[word]+1
         else:
-            wordCounts[word] = 1
-        return word.encode('utf8'),wordCounts
+            wordcounts[word] = 1
+        return word.encode('utf-8'),wordcounts
         #file.close();
-    
+
+wrd_dict= countWordsUnstructured('./state-of-the-union-corpus-1989-2017/Trump_2017.txt')
+
     
     # This function should count the words in an unstructured text document
     # Inputs: A file name (string)
     # Outputs: A dictionary with the counts for each word
     # +1 bonus point for removing punctuation from the wordcounts
     
-wrd_dict= countWordsUnstructured('./state-of-the-union-corpus-1989-2017/Trump_2017.txt')
 
 ################################################################################
 # PART 2
 ################################################################################
     
 import csv
-def generateSimpleCSV(targetfile, wordCounts): 
-
-    file=open(targetfile, "w")
-    file.write("Word, Count")
-    for word, count in wordCounts.items():
-        file.write(Word + "," + str(Count) + "\n")
-    return
-
-generateSimpleCSV("file.csv", wrd_dict) 
+def generateSimpleCSV(targetfile, wordCounts):
+    #with open(targetfile, "w", encoding='utf8') as file
     
+    file=open(targetfile.encode('utf-8'), "w")
+    file.write("Word, Count")
+    for word in wordCounts:
+        count = targetfile[0]
+        file.write(str(word) + "," + str(count) + "\n")
+    return 
+   
+
+generateSimpleCSV("targetfile.csv", wrd_dict) 
+
     # This function should transform a dictionary containing word counts to a
     # CSV file. The first row of the CSV should be a header noting: 
     # Word, Count
@@ -57,7 +59,15 @@ generateSimpleCSV("file.csv", wrd_dict)
 ################################################################################
 # PART 3
 ################################################################################
-#def countWordsMany(directory): 
+def countWordsMany(directory): 
+    wordCountDict = {}
+    dir_entry = [entry.name for entry in os.scandir(directory)]
+    for file in dir_entry:
+        wordCountDict[file]= countWordsUnstructured(directory + "/" + file)
+    return wordCountDict
+
+masterWordDict = countWordsMany("./state-of-the-union-corpus-1989-2017")
+#print(masterWordDict)
     # This function should create a dictionary of word count dictionaries
     # The dictionary should have one dictionary per file in the directory
     # Each entry in the dictionary should be a word count dictionary
@@ -70,7 +80,17 @@ generateSimpleCSV("file.csv", wrd_dict)
 ################################################################################
 # PART 4
 ################################################################################
-#def generateDirectoryCSV(wordCounts, targetfile): 
+def generateDirectoryCSV(wordCounts, targetfile): 
+    CSVfile=open(targetfile, 'w')
+    CSVfile.write("filename, Word, Count\n")
+    for wordfile, dict in wordCounts.items():
+        for word, count in dict.items():
+            CSVfile.write(wordfile + "," + word + "," +str(count) + "\n")
+        CSVfile.close()
+        return 0
+generateDirectoryCSV(masterWordDict, "targetfile2.csv")
+    
+    
     # This function should create a CSV containing the word counts generated in
     # part 3 with the header: 
     # Filename, Word, Count
@@ -82,7 +102,12 @@ generateSimpleCSV("file.csv", wrd_dict)
 ################################################################################
 # PART 5
 ################################################################################
-#def generateJSONFile(wordCounts, targetfile): 
+def generateJSONFile(wordCounts, targetfile):
+    JSONfile=open(targetfile, "w")
+    JSONfile.write(str(wordCounts.replace("\'", "\"")))
+    JSONfile.close()
+    return 0
+generateJSONFile(masterWordDict, "targetfile.json")
     # This function should create an containing the word counts generated in
     # part 3. Architect your JSON file such that the hierarchy will allow
     # the user to quickly navigate and compare word counts between files. 
