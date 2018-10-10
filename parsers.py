@@ -44,14 +44,14 @@ def generateSimpleCSV(targetfile, wordCounts):
     #with open(targetfile, "w", encoding='utf8') as file
     
     file=open(targetfile.encode('utf-8'), "w")
-    file.write("Word, Count")
+    file.write("Word, Count\n")
     for word in wordCounts:
-        count = targetfile[0]
+        count = wordCounts[word]
         file.write(str(word) + "," + str(count) + "\n")
     return 
    
 
-generateSimpleCSV("targetfile.csv", wrd_dict) 
+generateSimpleCSV('targetfile3.csv', wrd_dict) 
 
     # This function should transform a dictionary containing word counts to a
     # CSV file. The first row of the CSV should be a header noting: 
