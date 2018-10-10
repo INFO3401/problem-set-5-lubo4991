@@ -5,27 +5,31 @@
 
 # PART #1
 ################################################################################
+import string
+import os
 
 def countWordsUnstructured(filename):
-    wordcount={}
+    wordCounts={}
     file = open(filename)
-
+#file = open(filename).read().split()
 
     for word in file.read().split():
-        if word not in wordcount:
-            wordcount[word] = 1
+        for mark in string.punctuation:
+            word = word.replace(mark, "")
+        if word in wordCounts:
+            wordCounts[word] = wordCounts[word]+1
         else:
-            wordcount[word] += 1
-        print (word.encode('utf8'),wordcount)
-        file.close();
+            wordCounts[word] = 1
+        return word.encode('utf8'),wordCounts
+        #file.close();
+    
     
     # This function should count the words in an unstructured text document
     # Inputs: A file name (string)
     # Outputs: A dictionary with the counts for each word
     # +1 bonus point for removing punctuation from the wordcounts
     
-# Test your part 1 code below.
-countWordsUnstructured('./state-of-the-union-corpus-1989-2017/Trump_2017.txt')
+wrd_dict= countWordsUnstructured('./state-of-the-union-corpus-1989-2017/Trump_2017.txt')
 
 ################################################################################
 # PART 2
@@ -33,7 +37,14 @@ countWordsUnstructured('./state-of-the-union-corpus-1989-2017/Trump_2017.txt')
     
 import csv
 def generateSimpleCSV(targetfile, wordCounts): 
-    mydict = wordcount
+
+    file=open(targetfile, "w")
+    file.write("Word, Count")
+    for word, count in wordCounts.items():
+        file.write(Word + "," + str(Count) + "\n")
+    return
+
+generateSimpleCSV("file.csv", wrd_dict) 
     
     # This function should transform a dictionary containing word counts to a
     # CSV file. The first row of the CSV should be a header noting: 
