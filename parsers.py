@@ -6,7 +6,9 @@
 # PART #1
 ################################################################################
 import string
-import os
+from os import listdir
+import csv
+
 
 def countWordsUnstructured(filename):
     wordcounts={}
@@ -33,7 +35,10 @@ wrd_dict= countWordsUnstructured('./state-of-the-union-corpus-1989-2017/Trump_20
 ################################################################################
 # PART 2
 ################################################################################
-    
+# open the file
+#Print the headers
+# Iterate through the word counts
+    #
 import csv
 def generateSimpleCSV(targetfile, wordCounts):
     #with open(targetfile, "w", encoding='utf8') as file
@@ -60,6 +65,11 @@ generateSimpleCSV("targetfile.csv", wrd_dict)
 # PART 3
 ################################################################################
 def countWordsMany(directory): 
+    #csvFile = open(target, 'w')
+    #fileWriter = csv.writer(csvFile)
+    #fileWeiter.writerow(['Word', 'Count'])
+    #for word in wordCounts: 
+    
     wordCountDict = {}
     dir_entry = [entry.name for entry in os.scandir(directory)]
     for file in dir_entry:
