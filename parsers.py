@@ -41,7 +41,7 @@ wrd_dict= countWordsUnstructured('./state-of-the-union-corpus-1989-2017/Trump_20
     #
 import csv
 def generateSimpleCSV(targetfile, wordCounts):
-    #with open(targetfile, "w", encoding='utf8') as file
+    
     
     file=open(targetfile.encode('utf-8'), "w")
     file.write("Word, Count\n")
@@ -70,14 +70,15 @@ def countWordsMany(directory):
     #fileWeiter.writerow(['Word', 'Count'])
     #for word in wordCounts: 
     
+    
     wordCountDict = {}
     dir_entry = [entry.name for entry in os.scandir(directory)]
-    for file in dir_entry:
+    for word in wordCountDict:
         wordCountDict[file]= countWordsUnstructured(directory + "/" + file)
     return wordCountDict
 
-masterWordDict = countWordsMany("./state-of-the-union-corpus-1989-2017")
-#print(masterWordDict)
+masterWordDict = countWordsMany('./state-of-the-union-corpus-1989-2017')
+print(masterWordDict)
     # This function should create a dictionary of word count dictionaries
     # The dictionary should have one dictionary per file in the directory
     # Each entry in the dictionary should be a word count dictionary
