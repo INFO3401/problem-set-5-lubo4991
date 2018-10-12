@@ -72,8 +72,9 @@ def countWordsMany(directory):
     
     
     wordCountDict = {}
-    dir_entry = [entry.name for entry in os.scandir(directory)]
-    for word in wordCountDict:
+    dir_entry = os.listdir(directory)
+    #[entry.name for entry in 
+    for file in dir_entry:
         wordCountDict[file]= countWordsUnstructured(directory + "/" + file)
     return wordCountDict
 
